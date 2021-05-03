@@ -1,0 +1,22 @@
+.big-button{
+  color: #fff;
+  background-color: $blueFb;
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $blueFbHover
+  }
+}
+
+.button-without-bg{
+  background: none;
+  border: none;
+  color: $blueFb;
+
+  &:hover{
+    color: $blueFbHover
+  }
+}

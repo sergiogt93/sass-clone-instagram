@@ -1,0 +1,22 @@
+.history{
+  @extend .background-square;
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+  &__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0.2rem;
+    i{
+      font-size: 2rem;
+      border: 2px solid magenta;
+      border-radius: 50%;
+    }
+
+    p{
+      margin: 0.1rem;
+    }
+
+  }
+}

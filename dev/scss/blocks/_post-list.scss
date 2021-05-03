@@ -1,0 +1,55 @@
+.post-list{
+  @extend .background-square;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 3rem auto;
+
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+      padding: 0 0.3rem;
+
+    section{
+      display: flex;
+      align-items: center;
+      p{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  &__icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 0.2rem 0.3rem;
+  }
+
+  &__like{
+    padding: 0.2rem 0.3rem;
+  }
+
+  &__comments{
+    padding: 0.2rem 0.3rem;
+  }
+
+  &__time{
+    color: $grey;
+    padding: 0.2rem 0.3rem;
+  }
+
+  &__add-comments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.3rem;
+    input{
+      width: 80%;
+      background-color: none;
+      border: none;
+    }
+  }
+}

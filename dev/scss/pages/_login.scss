@@ -1,0 +1,142 @@
+.main-container{
+  display: flex;
+  justify-content: space-around;
+  min-height: 70vh;
+  max-width: 935px;
+  margin: 3em auto;
+
+  .photo-gallery{
+    background-image: url("../../../public/assets/img/mobileContainer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+
+    &__container{
+      margin-top: 22%;
+      margin-left: 32%;
+      max-width: 55%;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .login{
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__item{
+      @extend .background-square;
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+
+      .login__title{
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      form{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+
+        label{
+          display: flex;
+          flex-direction: column;
+          margin: 0.2rem 0;
+          padding: 0.5em;
+          background-color: #E8F0FE;
+          border: 1px solid #dbdbdb;
+          border-radius: 3px;
+
+          span{
+            font-size: small;
+            color: $grey;
+          }
+          input{
+            all: unset;
+          }
+        }
+
+        button{
+          margin-top: 0.6rem;
+        }
+      }
+
+      .separator{
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: $grey;
+        font-weight: bold;
+        &__line{
+          background-color: #dbdbdb;
+          height: 1.5px;
+          width: 25%;
+        }
+      }
+
+      .login__link{
+        text-align: center;
+        color: #385185;
+        margin: 0.5rem 0;
+      }
+      p{
+        text-align: center;
+      }
+    }
+
+    &__get{
+      p{
+        text-align: center;
+      }
+      .container-store{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .img-store{
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  color: $grey;
+
+  &__link{
+    display: flex;
+    flex-direction: column;
+
+    .link__item{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      p{
+        padding: 0 0.5em;
+      }
+    }
+  }
+
+  &__language{
+    display: flex;
+    justify-content: center;
+    .language__item{
+      display: flex;
+      align-items: center;
+      p{
+        padding: 0.5em;
+      }
+    }
+  }
+}
