@@ -67,5 +67,6 @@ To deliver this project you must follow the steps indicated in the document:
 
 - [SASS documentation](https://sass-lang.com/)
 - [W3S SASS](https://www.w3schools.com/sass/)
+- [SASS Guidelines](https://sass-guidelin.es/es/)
 - [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
 - [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
