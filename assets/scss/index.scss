@@ -1,0 +1,21 @@
+/*
+* Main CSS
+*/
+
+@charset "utf-8";
+@use "./base"as base;
+@use "./componenets" as components;
+@use "./layout" as layout;
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: base.$font-family;
+    background: base.$body-primary-bgcolor;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration:none;
+}

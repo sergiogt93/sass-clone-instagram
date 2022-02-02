@@ -1,0 +1,24 @@
+{
+  "name": "sass-clone-instagram",
+  "version": "1.0.0",
+  "description": "`#sass` `#css` `#html` `#master-in-software-engineering`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass assets/scss/index.scss assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiogt93/sass-clone-instagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiogt93/sass-clone-instagram/issues"
+  },
+  "homepage": "https://github.com/sergiogt93/sass-clone-instagram#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "scss": "^0.2.4"
+  }
+}

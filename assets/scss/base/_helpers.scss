@@ -1,0 +1,33 @@
+@use "variables";
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: $direction;
+}
+
+@mixin mobile {
+    @media (min-width: variables.$mobile) {
+        @content;
+    }
+}
+
+
+@mixin tablet {
+    @media (min-width: variables.$tablet) {
+        @content;
+    }
+}
+
+@mixin minilaptop {
+    @media (min-width: variables.$minilaptop) {
+        @content;
+    }
+}
+
+@mixin computer {
+    @media (min-width: variables.$computer) {
+        @content;
+    }
+}

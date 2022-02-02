@@ -1,0 +1,116 @@
+@use "../base" as base;
+
+
+.right-content-main {
+    margin: 0.5rem;
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.border {
+    @include base.mobile {
+        border: 1px solid base.$border-login-content;
+    }
+    margin: 4% auto;
+}
+
+.loginImg {
+    display: none;
+    @include base.minilaptop {
+        display: block;
+    }
+}
+
+.box-login, .login-form {
+    @include base.flexCenter(column wrap);
+}
+
+.rounded{
+    width: 85%;
+    height: 25px;
+    border: 1px solid base.$btn-rounded-bg-color;
+    border-radius: 5px;
+}
+
+.box-login {
+    text-align: center;
+
+    @include base.tablet {
+        @include base.flexCenter(row wrap);
+    }
+
+    @include base.minilaptop {
+        width: 100%;
+        margin: auto;
+        margin-top: 4%;
+    }
+
+    section {
+        width: 80%;
+        @include base.mobile {
+            width: 50%;
+        }
+        @include base.tablet {
+            width: 50%;
+        }
+        @include base.minilaptop {
+            width: 45%;
+        }
+    }
+
+    div {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    div input {
+        background: base.$input-primary-color;
+    }
+
+    div button[type=submit] {
+        background-color: base.$btn-primary-bgcolor;
+        color: base.$btn-primary-color;
+    }
+
+    .loginFacebook {
+        border: 0;
+        background-color: transparent;
+        color: base.$txt-color-facebook;
+        font-weight: bold;
+    }
+}
+
+.download-apps {
+    display: flex;
+    flex-direction: column;
+    
+    div{
+        display: flex;
+
+    }
+    img {
+        width: 90%;
+    }
+}
+
+footer {
+    color: base.$txt-color-footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    a, a:link, a:visited, a:active {
+        color: base.$txt-color-footer;
+    }
+
+    section{
+        @include base.flexCenter(row wrap);
+        gap: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
