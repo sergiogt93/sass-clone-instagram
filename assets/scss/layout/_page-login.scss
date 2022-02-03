@@ -1,5 +1,12 @@
 @use "../base" as base;
 
+.left-content-main {
+    display: none;
+    @include base.minilaptop {
+        width: 40%;
+        @include base.flex(row wrap, flex-end);
+    }
+}
 
 .right-content-main {
     margin: 0.5rem;
@@ -16,18 +23,11 @@
     margin: 4% auto;
 }
 
-.loginImg {
-    display: none;
-    @include base.minilaptop {
-        display: block;
-    }
-}
-
 .box-login, .login-form {
-    @include base.flexCenter(column wrap);
+    @include base.flex(column wrap, center);
 }
 
-.rounded{
+.square{
     width: 85%;
     height: 25px;
     border: 1px solid base.$btn-rounded-bg-color;
@@ -38,7 +38,7 @@
     text-align: center;
 
     @include base.tablet {
-        @include base.flexCenter(row wrap);
+        @include base.flex(row wrap, center);
     }
 
     @include base.minilaptop {
@@ -56,7 +56,7 @@
             width: 50%;
         }
         @include base.minilaptop {
-            width: 45%;
+            width: 30%;
         }
     }
 
@@ -106,7 +106,7 @@ footer {
     }
 
     section{
-        @include base.flexCenter(row wrap);
+        @include base.flex(row wrap, center);
         gap: 20px;
     }
 

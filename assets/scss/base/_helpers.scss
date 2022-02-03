@@ -1,8 +1,8 @@
 @use "variables";
 
-@mixin flexCenter($direction) {
+@mixin flex($direction, $justify) {
     display: flex;
-    justify-content: center;
+    justify-content: $justify;
     align-items: center;
     flex-flow: $direction;
 }
@@ -12,7 +12,6 @@
         @content;
     }
 }
-
 
 @mixin tablet {
     @media (min-width: variables.$tablet) {
@@ -28,6 +27,12 @@
 
 @mixin computer {
     @media (min-width: variables.$computer) {
+        @content;
+    }
+}
+
+@mixin bigcomputer {
+    @media (min-width: variables.$bigcomputer) {
         @content;
     }
 }
